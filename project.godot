@@ -1,0 +1,53 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "PathFollow2D",
+"class": "Enemy",
+"language": "GDScript",
+"path": "res://src/Enemy.gd"
+}, {
+"base": "RigidBody2D",
+"class": "Projectile",
+"language": "GDScript",
+"path": "res://src/Projectile.gd"
+}, {
+"base": "Area2D",
+"class": "Tower",
+"language": "GDScript",
+"path": "res://src/Tower.gd"
+} ]
+_global_script_class_icons={
+"Enemy": "",
+"Projectile": "",
+"Tower": ""
+}
+
+[application]
+
+config/name="TowerDefense"
+run/main_scene="res://src/Main.tscn"
+config/icon="res://icon.png"
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+
+[layer_names]
+
+2d_physics/layer_1="Tower"
+2d_physics/layer_2="Enemy"
+2d_physics/layer_3="Projectile"
+
+[rendering]
+
+quality/2d/use_pixel_snap=true
+environment/default_environment="res://default_env.tres"

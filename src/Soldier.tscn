@@ -21,14 +21,14 @@ animations = [ {
 "name": "Type2",
 "speed": 0.0
 }, {
-"frames": [ ExtResource( 5 ) ],
-"loop": false,
-"name": "Type3",
-"speed": 0.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": false,
 "name": "Type4",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 5 ) ],
+"loop": false,
+"name": "Type3",
 "speed": 0.0
 } ]
 

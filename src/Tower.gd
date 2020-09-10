@@ -2,8 +2,8 @@ extends Area2D
 
 class_name Tower
 
-export (Color, RGB) var Normal
-export (Color, RGB) var MouseOver
+export var Normal = Color(1, 1, 1)
+export var MouseOver = Color(1.2, 1.2, 1.2)
 var Target = []
 export var TimeLimit = 1.5
 var CoolTime = 1.5
@@ -26,6 +26,9 @@ func _process(delta):
 			shoot()
 
 
+#func setup(pos):
+#	position = pos
+
 
 func shoot():
 	pass
@@ -42,7 +45,7 @@ func ammo_recover(Exp):
 func display_range(on):
 	if on:
 		$Range.visible = true
-		$Base.set_modulate(MouseOver)
+		$Base.set_modulate((MouseOver))
 		$Cannon.set_modulate(MouseOver)
 	else:
 		$Range.visible = false

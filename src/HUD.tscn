@@ -1,10 +1,39 @@
-[gd_scene format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/TowerDefenseButton1.png" type="Texture" id=1]
+[ext_resource path="res://assets/TowerDefenseButton3.png" type="Texture" id=2]
+[ext_resource path="res://assets/TowerDefenseButton2.png" type="Texture" id=3]
 
 [node name="HUD" type="CanvasLayer"]
 
-[node name="TextureButton" type="TextureButton" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+[node name="TowerButton1" type="ToolButton" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -72.0
+margin_right = 76.0
+icon = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TowerButton2" type="ToolButton" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+margin_top = -72.0
+margin_right = 76.0
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TowerButton3" type="ToolButton" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 128.0
+margin_top = -72.0
+margin_right = 76.0
+icon = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
